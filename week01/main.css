@@ -35,17 +35,17 @@ nav {
     border-top: 1px solid #d0d0d0;
     border-bottom: 1px solid #d0d0d0;
     text-transform: uppercase;
-    font-size: small;
-    margin-bottom: 1em;
+    font-size: 16px;
+    text-align: center;
 }
 nav ul {
     list-style-type: none;
-    text-align: center;
+
   }
   
 nav ul li {
-    padding-right: .75em;
     font-family: Lora;
+    padding: 2px;
   }
   
 nav ul li a {
@@ -56,12 +56,11 @@ nav ul li a {
     font-size: medium;
     text-transform: uppercase;
     text-align: right;
+    padding-bottom: 1em;
+    border-bottom: .75px solid #d0d0d0;
   }
 .post-content {
-    padding-left: .75em;
     padding-bottom: 1em;
-    border-left: 1px solid #d0d0d0;
-    border-bottom: 1px dotted #d0d0d0;
   }
 p {
     font-size: .75em;
@@ -78,7 +77,9 @@ figure {
   @media (min-width: 450px) {
     /* Base styles for larger */
     nav ul li {
+      font-size: small;
       display: inline-block;
+      padding-right: .75em;
     }
     nav ul {
       text-align: right;
@@ -87,5 +88,14 @@ figure {
       display: grid;
       grid-template-columns: 1fr 4fr;
       gap: 10px;
+    }
+    .post-date {
+      border-bottom: none;
+    }
+    .post-content {
+      padding-left: .75em;
+      padding-bottom: 1em;
+      border-bottom: 1px dotted #d0d0d0;
+      border-left: 1px solid #d0d0d0;
     }
 }
