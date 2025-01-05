@@ -40,11 +40,10 @@ nav {
 }
 nav ul {
     list-style-type: none;
-    text-align: right;
+    text-align: center;
   }
   
 nav ul li {
-    display: inline-block;
     padding-right: .75em;
     font-family: Lora;
   }
@@ -52,11 +51,7 @@ nav ul li {
 nav ul li a {
     display: block; 
 }
-article {
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    gap: 10px;
-  }
+
 .post-date {
     font-size: medium;
     text-transform: uppercase;
@@ -80,6 +75,17 @@ figure {
     text-align: center;
   }
 
-  @media screen {
-    
-  }
+  @media (min-width: 450px) {
+    /* Base styles for larger */
+    nav ul li {
+      display: inline-block;
+    }
+    nav ul {
+      text-align: right;
+    }
+    article {
+      display: grid;
+      grid-template-columns: 1fr 4fr;
+      gap: 10px;
+    }
+}
